@@ -1,0 +1,41 @@
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ── Generated SciFact data (large, re-creatable via scifact_import.py) ────────
+scifact_raw/
+documents_scifact.csv
+scifact_queries.csv
+scifact_qrels.csv
+
+# ── User judgments (personal data, not part of source code) ──────────────────
+judgments.csv
+
+# ── OS and editor noise ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# ── Streamlit local config ────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Jupyter (if anyone opens notebooks) ──────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Build / dist artifacts ────────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
